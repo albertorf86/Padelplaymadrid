@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the best courts to play padel tennis | Padelplay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main id="grid-containerPista">
+        <header>
+            <div>
+                <a href="index.html"><img src="img/Logo.svg" alt="Logo Padelplay" id="logoTop"></a>
+            </div>    
+            <nav id="navHeader">
+                <a href="" >
+                <p id="textoNav">Find a court</p>
+                </a>
+            </nav>
+        </header>
+        <section id="banner">
+            <div id="divRotuloBanner">   
+                <h1 id="RotuloBanner">Find the best courts in Madrid to play padel tennis</h1>
+            </div>
+            <div id="divFotoBanner">
+                <img src="img/Red.png" alt="Red de padel" id="fotoBanner">
+            </div>
+        </section>
+        <section id="Busqueda">
+            <div id="divBusqueda">
+                <input type="text" name="Código postal" id="codigoPostal" placeholder="Madrid postal code">
+                <input type="button" value="Find courts" id="botonBusqueda" onclick=cPostal();reset()>
+            </div>
+        </section>
+        <section id="SeccionMapa">
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38560425257!2d-3.8199658826121317!3d40.43813066670212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2suk!4v1651685939353!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section id="SeccionResultados">
+            <div id="divRotuloCP">
+                <h3 id="h3RotuloCP"></h3>
+            </div>
+            <div class="divResultado">
+                <div class="divFotoClub">
+                    <img class="fotoClub" src="img/Club1.jpg" alt="">
+                </div>
+                <div class="divTextoResultado">
+                    <h4 class="h4Club">Club de Tenis, Pádel y Golf El Estudiante</h4>
+                    <h5 class="h5Direccion">Direction</h5>
+                    <div>
+                    <p class="pResultados">Carretera de Alcobendas a Barajas, Km 4
+                        28100 Alcobendas (Madrid)</p>
+                    </div>    
+                    <h5 class="h5Telefono">Telephone</h5>
+                    <p class="pResultados">916531673 / 677212074</p>    
+                </div>          
+            </div>
+            <div class="divResultado">
+                <div class="divFotoClub">
+                    <img class="fotoClub"src="img/Club2.jpg" alt="">
+                </div>
+                <div class="divTextoResultado">
+                    <h4 class="h4Club">Club Deportivo Republic Space</h4>
+                    <h5 class="h5Direccion">Direction</h5>
+                    <p class="pResultados">Avenida Condesa de Chinchón, 107
+                        28660 Boadilla del Monte (Madrid)</p>
+                    <h5 class="h5Telefono">Telephone</h5>
+                    <p class="pResultados">911299062</p>    
+                </div>          
+            </div>
+            <div class="divResultado">
+                <div class="divFotoClub">
+                    <img class="fotoClub"src="img/Club3.jpg" alt="">
+                </div>
+                <div class="divTextoResultado">
+                    <h4 class="h4Club">Complejo deportivo Somontes</h4>
+                    <h5 class="h5Direccion">Direction</h5>
+                    <p class="pResultados">Ctra. Madrid - El pardo, Km 3400
+                        28035 Madrid (Madrid)</p>
+                    <h5 class="h5Telefono">Telephone</h5>
+                    <p class="pResultados">913163434 / 913163235</p>    
+                </div>          
+            </div>
+            <div class="divResultado">
+                <div class="divFotoClub">
+                    <img class="fotoClub"src="img/Club4.jpg" alt="">
+                </div>
+                <div class="divTextoResultado">
+                    <h4 class="h4Club">Mega Pádel Indoor</h4>
+                    <h5 class="h5Direccion">Direction</h5>
+                    <p class="pResultados">Vereda del Alquiton, 13
+                        28500 Arganda del Rey (Madrid)</p>
+                    <h5 class="h5Telefono">Telephone</h5>
+                    <p class="pResultados">918706950 / 628760823</p>    
+                </div>          
+            </div>
+            <div class="divResultado">
+                <div class="divFotoClub">
+                    <img class="fotoClub"src="img/Club5.jpg" alt="">
+                </div>
+                <div class="divTextoResultado">
+                    <h4 class="h4Club">Sanset Pádel Indoor </h4>
+                    <h5 class="h5Direccion">Direction</h5>
+                    <div>
+                    <p class="pResultados">Calle Fuerteventura, 9
+                        28700 San Sebastián de los Reyes (Madrid)</p>
+                    </div>    
+                    <h5 class="h5Telefono">Telephone</h5>
+                    <p class="pResultados">917577190</p>    
+                </div>          
+            </div>
+            <div class="divResultado">
+                <div class="divFotoClub">
+                    <img class="fotoClub"src="img/Club6.jpg" alt="">
+                </div>
+                <div class="divTextoResultado">
+                    <h4 class="h4Club">Club de Pádel La Moraleja</h4>
+                    <h5 class="h5Direccion">Direction</h5>
+                    <p class="pResultados">Av. Bruselas, 29
+                        28108 Alcobendas (Madrid)</p>
+                    <h5 class="h5Telefono">Telephone</h5>
+                    <p class="pResultados">914841830</p>    
+                </div>          
+            </div>
+            <div class="divResultado">
+                <div class="divFotoClub">
+                    <img class="fotoClub"src="img/Club7.jpg" alt="">
+                </div>
+                <div class="divTextoResultado">
+                    <h4 class="h4Club">Parque Deportivo Puerta de Hierro</h4>
+                    <h5 class="h5Direccion">Direction</h5>
+                    <p class="pResultados">Carretera de la Coruña, Km. 7
+                        28035 Madrid (Madrid)</p>
+                    <h5 class="h5Telefono">Telephone</h5>
+                    <p class="pResultados">913768680</p>    
+                </div>          
+            </div>
+        </section>    
+        <footer>
+            <nav id="navFooter">
+                <div id="divFooter">
+                    <img src="img/twitter-circled-azul.svg" alt="logo de twitter" id="logoTwitter">
+                    <img src="img/facebook-circulo-azul.svg" alt="logo da facebook" class="logoFooter" id="logoFacebook">
+                    <img src="img/icons-instagram-azul.svg" alt="logo de instagram" class="logoFooter" id="logoInstagram">
+                </div>
+            </nav>
+        </footer>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

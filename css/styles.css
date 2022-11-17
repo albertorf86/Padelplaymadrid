@@ -1,0 +1,597 @@
+/* Styling using universal selector */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Grid style */
+#grid-container{
+    display: grid;
+    grid-template-areas: 'menuNav'
+                         'banner' 
+                         'seccion'
+                         'graficos'
+                         'piePagina';
+}
+
+/* Font style */
+p,h1,h2,h3,h4,h5{font-family:'Roboto',sans-serif;}
+
+/* Header style */
+header{
+    display: block;
+    height: 84px;
+    background-color: #349CF3;
+    grid-area: menuNav;
+}
+
+/* Header nav style */
+#navHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-right: 5%;
+}
+
+/* nav text style */
+#textoNav{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* nav text hover style */
+#textoNav:hover{
+    color: #08508B;
+}
+
+/* link style */
+a{
+    text-decoration: none;
+}
+
+/* header logo style */
+#logoTop{
+    position: absolute;
+    z-index: 2;
+    width: 207px;
+    height: 49px;
+    margin-left: 5%;
+    padding-top: 20px;
+}
+
+/* banner style */
+#banner{
+    display: block;
+    height: 100%;
+    grid-area: banner;
+    max-height: 346px;
+}
+
+/* banner style */
+#fotoBanner{
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height:217px;
+    min-width: 1058px;
+}
+
+/* Banner div text style */
+#divRotuloBanner{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* banner font style */
+#RotuloBanner{
+    display: block;
+    text-align: center;
+    color: #fff;
+    width: 913px;
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 4%;
+}
+
+/* Ball picture section style */
+#PelotaLista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #fff;
+    grid-area: seccion;
+    padding-top: 60px;
+    padding-bottom: 60px;
+} 
+
+/* ball div style */
+#divPelota{
+    padding-right: 30px;
+}
+
+/* Ball picture style */
+#fotoPelota{
+    width: 589px;
+    height: 100%;
+}
+
+/* Article style */
+#articleLista{
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+/* Article header style */
+#rotuloArticle{
+    color: #08508B;
+    font-size: 40px;
+    font-weight: 500;
+    width: 600px;
+}
+
+/* Articles text style */
+#textoArticle{
+    color: #08508B;
+    font-size: 20px;
+    line-height: 60px;
+    padding-top: 10px;
+    list-style: none;
+}
+
+/* List style */
+#textoArticle li:before {
+    content: '✓';
+    padding-right: 5px;
+  }
+
+/* Graphics section style */
+#sectionGraficos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #349CF3;
+    grid-area: graficos;
+    padding-bottom: 60px;
+}
+
+/* graphics div style */
+.divGraficos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 254px;
+    padding-top: 60px;
+}
+
+/* graphic images div style */
+.divImagenGraficos{
+    display: flex;
+    justify-content: center;
+    width: 251px;
+    height: 100%;
+}
+
+/* graphic images style */
+.imagenGraficos{
+    width: 200px;
+}
+
+/* graphic text style */
+ .h3Graficos{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 8px;
+} 
+
+/* footer style */
+footer{
+    height: 94px;
+    background-color: #3CDA9F;
+    grid-area: piePagina;
+}
+
+/* nav footer style*/
+#navFooter{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* footer div style*/
+#divFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer logos style */
+.logoFooter{
+    margin-left: 20px;
+}
+
+/* new styles for pistas.html */
+
+/* grid styles */
+#grid-containerPista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  
+    grid-template-areas: 'menuNav menuNav menuNav menuNav menuNav'
+                         'banner banner banner banner banner' 
+                         'busca busca busca busca busca' 
+                         'mapa mapa mapa mapa mapa'
+                         'resultados resultados resultados resultados resultados'
+                         'piePagina piePagina piePagina piePagina piePagina';                                      
+}
+
+/* search section style */
+#Busqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #349CF3;
+    height: 104px;
+    grid-area: busca
+}
+
+/* postal code input style */
+#codigoPostal{
+    width: 181px;
+    height: 34px;
+    font-family:'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+/* Search button style */
+#botonBusqueda{
+    width: 187px;
+    height: 43px;
+    text-align: center;
+    font-family:'Roboto',sans-serif;
+    color: #08508B;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #FAE273;
+    border-radius: 56px;
+    margin-left: 23px;
+    cursor:pointer;
+}
+
+/* button hover style */
+#botonBusqueda:hover{
+    background-color:#EDD35A;
+}
+
+/* map section style */
+#SeccionMapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEDED;
+    height: auto;   
+    grid-area:mapa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+} 
+
+/* map div style */
+#mapa{
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* map iframe style */
+iframe{
+    width:407px;
+    height:380px;
+    border: 0; 
+    box-shadow: 1px 2px 5px grey;
+    border-radius: 17px;
+}
+
+/* results section style */
+#SeccionResultados{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEDED;
+    height: auto/* 48vh */;   
+    grid-area:resultados;
+    padding-bottom: 60px;
+} 
+
+/* postal code div result header style*/
+#divRotuloCP{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 670px;
+    padding-top: 30px;  
+} 
+
+/* postal code result header style*/
+#h3RotuloCP{
+    padding-top: 10px;
+    color: #349CF3;
+    font-size: 22px;
+    font-weight: 400;
+}  
+
+/* result div style */
+.divResultado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 180px;
+    width: 670px;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px grey;
+    margin-top: 30px;
+    border-radius: 17px;
+}
+
+/* result div text style */
+.divTextoResultado{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 410px;
+}
+
+/* padel club header style */
+.h4Club{
+    padding-top: 10px;
+    color: #08508B;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* direction header style */
+.h5Direccion{
+    padding-top: 15px;
+    color: #08508B;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* telephone header style */
+.h5Telefono{
+    padding-top: 10px;
+    color: #08508B;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* direction and telephone text style */
+.pResultados{
+    color: #08508B;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* club pictures style */
+.fotoClub{
+    width: 240px;
+    height: 180px;
+}
+
+ /* responsive styles   */
+@media screen and (max-width:1300px){
+    #PelotaLista{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    #RotuloBanner{
+        display: block;
+        text-align: center;
+        color: #fff;
+        width: 913px;
+        font-size: 64px;
+        font-weight: 700;
+        padding-top: 4%;
+    }
+    #divPelota{
+        padding-right: 0px;
+    }
+    #articleLista{
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+}
+
+    @media screen and (max-width:1024px){
+        #RotuloBanner{
+            font-size: 50px;
+            width: 724px;
+        }
+        #fotoBanner{
+            position: fixed;
+            z-index: -1;
+            height: 300px;
+            top: 0px;
+            bottom: 0;
+            width: 100%;
+        }
+        #divFotoBanner{
+            height: 200px;
+        }
+    } 
+
+    @media screen and (max-width:793px){
+        #sectionGraficos{
+            padding-bottom: 40px;
+        }
+        .divGraficos{
+            padding-top: 40px;
+            width: 207px;
+        }
+        .divImagenGraficos{
+            width: 150px;
+        }
+        .imagenGraficos{
+            width: 150px;
+        }
+    }
+
+    @media screen and (max-width:720px){
+        #RotuloBanner{
+            font-size: 40px;
+            width: 505px;
+            padding-top: 6%;
+        }
+        #divPelota{
+            display: none;
+        }
+        .divFotoClub{
+            display: none;
+        }
+        .divResultado{
+            width: 100%;
+            border-radius: 0px;
+            height: auto;
+        } 
+        .divTextoResultado{
+            padding-left: 24px;
+            padding-bottom: 24px;
+        }
+        #h3RotuloCP{
+            padding-left: 24px;
+        }
+        #divRotuloCP{
+            margin-left: auto;
+        }
+    }
+
+     @media screen and (max-width:620.5px){
+        #divRotuloBanner{
+            padding-top: 1%;
+        }
+        #rotuloArticle{
+            font-size: 30px;
+            margin-right: 24px;
+            margin-left: 24px;
+            width: unset;    
+        }
+        #textoArticle{
+            margin-right: 24px;
+            margin-left: 24px;
+            font-size: 20px;
+            line-height: 50px;
+            padding-top: 0px;
+        }
+        #PelotaLista{
+            padding-top: 0px;
+        }
+     }
+
+     @media screen and (max-width:500px){
+        #mapa {
+            width: 100%;
+        }
+        iframe {
+            width: 100%;
+            border-radius: 0px; 
+        }
+     }    
+
+     @media screen and (max-width:450px){
+        .divTextoResultado{
+            width: 410px;
+        }
+        
+    }  
+
+
+     @media screen and (max-width:420px){
+        #logoTop{
+        width: 105px;
+        height: 25px;
+        padding-top: 14px;
+        }
+        #RotuloBanner {
+        font-size: 30px;
+        width: 340px;
+        padding-top: 8%;
+        }
+        #divFotoBanner {
+        height: 183px;
+        }
+        header {
+        height: 50px;
+        }
+        #textoNav {
+        font-size: 16px;
+        }
+        header{
+        height: 50px;
+        }
+        #RotuloBanner {
+            font-size: 25px;
+        }
+        #banner {
+            height: 150px;    
+        }
+        #rotuloArticle {
+            font-size: 25px;
+        }
+        #textoArticle {
+            font-size: 18px; 
+            padding-top: 9px;
+            line-height: 20px;  
+        }
+        ul#textoArticle li{
+           padding-bottom: 8px;
+        }
+        .imagenGraficos {
+        width: 130px;
+        }
+        #Busqueda{
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }    
+        #divBusqueda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        } 
+        #botonBusqueda{
+        margin-left: 0px; 
+        margin-top: 10px;
+        } 
+        .divTextoResultado{
+            width: 274px;
+        } 
+        #h3RotuloCP{
+            width: 270px;
+        } 
+    }
+
+  @media screen and (min-height:945px) and (max-width:912px){
+        #SeccionMapa{
+            height: 56vh;
+        }
+    }     
+
+
+
